@@ -40,7 +40,7 @@ jobs:
           PROJECT_ID: rwejlgaard
           APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
         with:
-          args: builds submit . --tag=gcr.io/rwejlgaard/pez.sh:latest --no-cache
+          args: builds submit . --tag=gcr.io/rwejlgaard/pez.sh:latest
       - uses: actions-hub/gcloud@master
         env:
           PROJECT_ID: rwejlgaard
