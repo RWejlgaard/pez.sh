@@ -27,8 +27,7 @@ jobs:
 
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: '1.22' # or, you can use 1.22
-          channel: 'master'
+          flutter-version: '1.22'
       - run: flutter pub get
       - run: flutter build web
       - run: rm -rf ./nginx
