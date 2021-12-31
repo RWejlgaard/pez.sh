@@ -158,7 +158,7 @@
                     <a target="_blank" href="https://keybase.io/rwejlgaard"><span class="fab fa-keybase"></span></a>
                 </div>
 
-                <p style="font-size: 10px">
+                <p style="font-size: 10px" id="hosted-on">
                     <br/>
                     Hosted with ❤️ on Firebase
                     <br/>
@@ -211,6 +211,7 @@
                                     <li><strong>Work . . . . .</strong> GoHenry</li>
                                     <li><strong>Nationality . . . . .</strong> Danish 🇩🇰</li>
                                     <li><strong>PGP . . . . .</strong> <a href="https://keybase.io/rwejlgaard/pgp_keys.asc">DEDE BE7B 7F4F 48F6</a></li>
+                                    <li><strong id="alt-website-label">Decentralized Website . . . . </strong> <a id="alt-website-href" href="https://ipfs.pez.sh">Link</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -219,6 +220,20 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            // if hostname starts with ipfs.
+            if (window.location.hostname.startsWith('ipfs.')) {
+                document.getElementById('hosted-on').innerHTML = '<br/>Hosted with ❤️ from <i>everywhere</i><br/>';
+                document.getElementById('alt-website-label').innerHTML = 'Normal Website . . . . ';
+                document.getElementById('alt-website-href').href = 'https://pez.sh';
+                
+            }
+            // if hostname starts with localhost.
+            else if (window.location.hostname.startsWith('localhost')) {
+                document.getElementById('hosted-on').innerHTML = '<br/>Hosted with ❤️ from <i>localhost</i><br/>';
+            }
+        </script>
 
         <!--
             Card - Resume
