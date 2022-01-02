@@ -13,9 +13,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Deploy to IPFS servers
         run: |
-          echo ${{ secrets.SSH_KEY }} > ~/.ssh/id_rsa
+          mkdir -p ~/.ssh
+          echo ${{ secrets.SSH_KEY }} | tee ~/.ssh/id_rsa
           cd ${{ github.workspace }}
-          bash deploy-ipfs.sh
+          ./deploy-ipfs.sh
       - name: Update cloudflare
         run: |
           mkdir -p ~/.ssh
