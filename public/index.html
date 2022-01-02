@@ -206,13 +206,19 @@
                             </div>
                             <div class="info-list">
                                 <ul>
-                                    <li><strong>Age . . . . .</strong> 24</li>
+                                    <li id="age"><strong>Age . . . . .</strong> 25</li>
                                     <li><strong>Residence . . . . .</strong> London, UK 🇬🇧</li>
                                     <li><strong>Work . . . . .</strong> GoHenry</li>
                                     <li><strong>Nationality . . . . .</strong> Danish 🇩🇰</li>
                                     <li><strong>PGP . . . . .</strong> <a href="https://keybase.io/rwejlgaard/pgp_keys.asc">DEDE BE7B 7F4F 48F6</a></li>
                                     <li><strong id="alt-website-label">Decentralized Website . . . . </strong> <a id="alt-website-href" href="https://ipfs.pez.sh">Link</a></li>
                                 </ul>
+                            </div>
+                            <div style="padding-top: 20px;"></div>
+                            <div id='ipfs-warning' hidden="true">
+                                <p style="border: 2px dashed #304fff; padding: 10px;border-radius: 10px;text-align: center; text-align-last: center;">
+                                    This page is using IPFS, responsiveness might be slow
+                                </p>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -222,11 +228,20 @@
         </div>
 
         <script>
-            // if hostname starts with ipfs.
-            if (window.location.hostname.startsWith('ipfs.')) {
+            function calculateAge(birthday) { // birthday is a date
+                var ageDifMs = Date.now() - birthday;
+                var ageDate = new Date(ageDifMs); // miliseconds from epoch
+                return Math.abs(ageDate.getUTCFullYear() - 1970);
+            }
+            // set age to amount of years since 29/10/1996
+            document.getElementById('age').innerHTML = '<strong>Age . . . . .</strong> ' + calculateAge(new Date("1996-10-29"))
+
+            // if hostname starts with ipfs. or contains ipns.
+            if (window.location.hostname.startsWith('ipfs.') || window.location.hostname.includes('ipns.')) {
                 document.getElementById('hosted-on').innerHTML = '<br/>Hosted with ❤️ from <i>everywhere</i><br/>';
                 document.getElementById('alt-website-label').innerHTML = 'Normal Website . . . . ';
                 document.getElementById('alt-website-href').href = 'https://pez.sh';
+                document.getElementById('ipfs-warning').hidden = false;
                 
             }
             // if hostname starts with localhost.
@@ -467,16 +482,20 @@
                         <div class="col border-line-v">
                             <div class="resume-items">
                                 <div class="resume-item border-line-h active">
+                                    <div class="name">Raven <a href="https://github.com/nikhunter/Raven"><span class="fab fa-github"></span></a></div>
+                                    <div class="company">C, C# & Java</div>
+                                    <p>
+                                        Raven was my bachelor project, in essence it's a software suite for mass tracking of a vehicle fleet.<br/>
+                                        Using a custom designed device to plug into the vehicles data-bus it provides logging of stats like speed, RPM, location, seatbelts etc.
+                                    </p>
+                                </div>
+                                <div class="resume-item border-line-h active">
                                     <div class="name">Phoenix <a href="https://github.com/rwejlgaard/Phoenix"><span class="fab fa-github"></span></a></div>
                                     <div class="company">Swift, Terraform & GO</div>
                                     <p>
-                                        Phoenix is a personal project I've started to automate my
-                                        life.<br/>
-                                        It's a collection of Cloud Functions with a companion iOS
-                                        application.<br/>
-                                        Functions are timed or can be activated ad-hoc, such as sending
-                                        flowers to a family member before their birthday.
-
+                                        Phoenix is a personal project I've started to automate my life.<br/>
+                                        It's a collection of Cloud Functions with a companion iOS application.<br/>
+                                        Functions are timed or can be activated ad-hoc, such as sending flowers to a family member before their birthday.
                                     </p>
                                 </div>
                                 <div class="resume-item border-line-h active">
@@ -621,11 +640,6 @@
 <script src="js/masonry.pkgd.js"></script>
 <script src="js/masonry-filter.js"></script>
 <script src="js/jquery.slimscroll.js"></script>
-
-<!--
-    Google map api
--->
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyBqrYheYLfO9zFQQFDvO6VrcA9rTlHWcjI&sensor=false"></script>
 
 <!--
     Main Scripts
