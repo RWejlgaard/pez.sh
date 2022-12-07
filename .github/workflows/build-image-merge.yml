@@ -7,9 +7,6 @@ on:
       - 'master'
     tags:
       - 'v*.*.*'
-  pull_request:
-    branches:
-      - 'master'
 
 jobs:
   build:
@@ -41,13 +38,8 @@ jobs:
             rwejlgaard/pez.sh
           # Docker tags based on the following events/attributes
           tags: |
-            type=schedule
             type=ref,event=branch
-            type=ref,event=pr
             type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-            type=sha
 
       - name: Build and push
         uses: docker/build-push-action@v2
