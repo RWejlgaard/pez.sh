@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: {{ .Chart.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+  workloadRef: 
+    apiVersion: apps/v1
+    kind: Deployment
+    name: {{ .Chart.Name }}
+  replicas: {{ .Values.rollouts.replicas }}
+  strategy:
+    canary:
+      {{- with .Values.rollouts.steps }}
+      steps:
+        {{- toYaml . | nindent 6 }}
+      {{- end }}
+      canaryService: {{ .Values.rollouts.canaryService }}
+      stableService: {{ .Values.rollouts.stableService }}
+      trafficRouting:
+        istio:
+          virtualServices:
+          - name: {{ .Chart.Name }}
+            routes:
+            - {{ .Chart.Name }}
