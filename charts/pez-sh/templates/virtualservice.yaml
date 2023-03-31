@@ -15,9 +15,5 @@ spec:
   - name: {{ .Chart.Name }}
     route:
     - destination:
-        host: {{ .Values.rollouts.stableService }}
+        host: {{ .Chart.Name }}
       weight: 100
-    - destination:
-        host: {{ .Values.rollouts.canaryService }}
-      weight: 0
-    

@@ -3,6 +3,8 @@ image:
   pullPolicy: IfNotPresent
   tag: ""
 
+replicaCount: 3
+
 service:
   port: 80
 
@@ -12,7 +14,7 @@ podAnnotations: {}
 labels:
 autoscaling:
   enabled: true
-  minReplicas: 1
+  minReplicas: 3
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
 
@@ -24,30 +26,10 @@ resources:
     cpu: 100m
     memory: 100Mi
 
-rollouts:
-  replicas: 1
-  canaryService: pez-sh-canary
-  stableService: pez-sh-stable
-  steps:
-  - setWeight: 10
-  - pause:
-      duration: "5m"
-  - setWeight: 20
-  - pause:
-      duration: "5m"
-  - setWeight: 40
-  - pause:
-      duration: "5m"
-  - setWeight: 50
-  - pause:
-      duration: "5m"
-
 virtualService:
   hosts:
   - pez-sh.london.pez.sh
-  - pez-sh.paris.pez.sh
   - pez-sh.copenhagen.pez.sh
   gateways:
   - istio-system/london-pez-sh
-  - istio-system/paris-pez-sh
   - istio-system/copenhagen-pez-sh
