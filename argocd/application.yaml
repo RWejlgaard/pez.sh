@@ -14,7 +14,7 @@ spec:
   source:
     chart: pez-sh
     repoURL: https://rwejlgaard.github.io/pez-helm-charts/
-    targetRevision: 2.0.0
+    targetRevision: 2.0.1
     helm:
       releaseName: pez-sh
   destination:
