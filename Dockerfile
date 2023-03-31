@@ -1,3 +1,7 @@
-FROM nginx:latest
+FROM ruby:latest AS build
+COPY ./src/. /app
+WORKDIR /app
+RUN bundle install && jekyll build
 
-COPY public /usr/share/nginx/html
+FROM nginx:latest AS final
+COPY --from=build /app/_site /usr/share/nginx/html

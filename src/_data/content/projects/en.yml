@@ -1,0 +1,49 @@
+#you can move this content to front matter of [language]/tabs/projects.md
+###########################################################
+#                Projects Page Data
+###########################################################
+page_data:
+  main:
+    header: "Projects"
+    info: "These are my projects"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    #img: ":projects-heading.jpg"
+    back_color: "gray"
+
+  category:
+    #- title: "HomeLab"
+      #type: id_homelab
+      #color: "black"
+    #- title: "Side-Projects"
+      #type: id_side_projects
+      #color: "purple"V
+
+  list:
+    # example
+    #- type: id_example
+      #project_name: "Example Project"
+      #project_excerpt: "Examples"
+      #img: ":project1_thumb.jpg"
+      #img_title: "img title1"
+      #date: "2021-03-13"
+      #post: |
+        ## Examples
+
+        #This is an example page to display markdown related styles for Mr. Green Jekyll Theme.
+
+        #### Headings (centered)
+        #{:data-align="center"}
+
+        ## Heading 1
+
+        ### Heading 2
+
+        #### Heading 3
+
+        ##### Heading 4
+
+        ###### Heading 5
+
+        ####### Heading 6
+
