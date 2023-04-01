@@ -29,7 +29,7 @@ layout: default
             <span>{{ post.date | date: site.data.lang[lng].date.day }}</span>
             {%- assign page_title = post.title -%}
             {%- include util/auto-content-post-title-rename.liquid title = page_title -%}
-            <a href="{{ post.url | relative_url }}">{{ page_title }}</a>
+            <a href="{{ post.url | relative_url }}.html">{{ page_title }}</a>
           </li>
         {%- endfor %}
         </ul>
