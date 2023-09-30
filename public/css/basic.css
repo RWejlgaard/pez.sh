@@ -1,7 +1,10 @@
-/*
-*	 Author: beshleyua
-*	 Author URL: http://themeforest.net/user/beshleyua
-*/
+/**
+*	Ryan - Resume/CV/vCard Template (HTML)
+*	Version: 2.6
+*	Author: bslthemes
+*	Author URL: http://themeforest.net/user/bslthemes
+*	Copyright © RyanCV by bslthemes. All Rights Reserved.
+**/
 
 /* TABLE OF CONTENTS
 	1. Base
@@ -140,8 +143,9 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: rgba(8, 86, 193, 0.4);
+	background-color: rgba(120, 204, 109, 0.4);
 }
+
 
 /*
 	3. Columns
@@ -376,7 +380,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #0856c1;
+	background: #78cc6d;
 	opacity: 1;
 	-webkit-animation: sk-bounce 2s infinite ease-in-out;
 	animation: sk-bounce 2s infinite ease-in-out;
@@ -560,19 +564,19 @@ strong {
 
 .lnk:hover,
 .button:hover {
-	color: #0856c1;
+	color: #78cc6d;
 }
 
 .lnk:hover .ion,
 .button:hover .ion {
-	color: #0856c1;
+	color: #78cc6d;
 }
 
 .lnk:hover .arrow:before,
 .button:hover .arrow:before,
 .lnk:hover .arrow:after,
 .button:hover .arrow:after {
-	background: #0856c1;
+	background: #78cc6d;
 }
 
 .button {
@@ -590,7 +594,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #0856c1;
+	color: #78cc6d;
 }
 
 /* lists */
@@ -688,7 +692,7 @@ input:focus,
 textarea:focus,
 button:focus {
 	color: #171717;
-	border-bottom: 1px solid #0856c1;
+	border-bottom: 1px solid #78cc6d;
 }
 
 textarea {
@@ -707,7 +711,7 @@ button {
 }
 
 button:hover {
-	border-bottom: 1px solid #0856c1;
+	border-bottom: 1px solid #78cc6d;
 }
 
 label,
@@ -1026,4 +1030,3 @@ textarea.error::-webkit-input-placeholder {
 	}
 
 }
-

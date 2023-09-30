@@ -1,7 +1,10 @@
-/*
-*	 Author: beshleyua
-*	 Author URL: http://themeforest.net/user/beshleyua
-*/
+/**
+* Ryan - Resume/CV/vCard Template (HTML)
+* Version: 2.6
+* Author: bslthemes
+* Author URL: http://themeforest.net/user/bslthemes
+* Copyright © RyanCV by bslthemes. All Rights Reserved.
+**/
 
 /* TABLE OF CONTENTS
 	1. Gradient
@@ -14,8 +17,8 @@
 
 .background.gradient {
   background: #50a3a2;
-  background: -webkit-linear-gradient(top left, #48b1bf 0%, #0856c1 100%);
-  background: linear-gradient(to bottom right, #48b1bf 0%, #0856c1 100%);
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #78cc6d 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
   position: fixed;
   overflow: hidden;
   top: 0;

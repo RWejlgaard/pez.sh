@@ -1,7 +1,10 @@
-/*
-*	 Author: beshleyua
-*	 Author URL: http://themeforest.net/user/beshleyua
-*/
+/**
+*   Ryan - Resume/CV/vCard Template (HTML)
+*   Version: 2.5
+*   Author: bslthemes
+*   Author URL: http://themeforest.net/user/bslthemes
+*   Copyright © RyanCV by bslthemes. All Rights Reserved.
+**/
 
 /* TABLE OF CONTENTS
 	1. RTL
@@ -134,7 +137,7 @@ ol, ul {
 .post-box .blog-content blockquote {
     padding: 0 20px 0 0;
     border-left: none;
-    border-right: 2px solid #2eca7f;
+    border-right: 2px solid #78cc6d;
 }
 
 .box-item .date {

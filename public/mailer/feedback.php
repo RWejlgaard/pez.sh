@@ -1,20 +1,19 @@
 <?php 
-//require 'PHPMailerAutoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'Exception.php';
+require 'PHPMailer.php';
+//require 'SMTP.php';
+require 'POP3.php';
 require 'form_setting.php';
 
 if(isset($_POST)){
-	require_once('class.phpmailer.php');
-	require_once('class.smtp.php');
-	
-	//$name = 'name';
-	//$email = 'email';
-	//$message = 'message';
-
-
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
-
+	
 	$messages  = "<h3>New message from the site " .$fromName. "</h3> \r\n";
 	$messages .= "<ul>";
 	$messages .= "<li><strong>Name: </strong>" .$name."</li>";
@@ -22,18 +21,7 @@ if(isset($_POST)){
 	$messages .= "<li><strong>Message: </strong>" .$message."</li>";
 	$messages .= "</ul> \r\n";
 
-	$mail = new PHPMailer(true);
-
-	
-	//server settings
-	//$mail->SMTPDebug = 2;
-	$mail->isSMTP();
-	$mail->Host = 'smtp-mail.outlook.com';
-	//$mail->SMTPAuth = true;
-	$mail->Username = 'wejlgaard@live.dk';
-	$mail->Password = 'W!jlgaard123';
-	//$mail->SMTPSecure = 'tls';
-	$mail->Port = 25;
+	$mail = new PHPMailer;
 
 	$mail->From = $from;
 	$mail->FromName = $fromName;
@@ -46,10 +34,11 @@ if(isset($_POST)){
 	$mail->Body    = $messages;
 
 	if(!$mail->send()) {
-		print json_encode(array('status'=>0));
+	    print json_encode(array('status'=>0));
 	} else {
 	    print json_encode(array('status'=>1));
 	}
+
 }
 	
 ?>

@@ -2,655 +2,746 @@
 <html lang="en">
 <head>
 
-    <!--
-        Basic
-    -->
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Pez.sh</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <meta name="description" content="Pez Portfolio"/>
-    <meta name="keywords" content="pez, vcard, resposnive, resume, personal, card, cv, cards, portfolio"/>
-    <meta name="author" content="pez"/>
+	<!--
+		Basic
+	-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>pez.sh</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="Pez.sh" />
+	<meta name="keywords" content="vcard, responsive, resume, personal, card, cv, cards, portfolio" />
 
-    <!--
-        Load Fonts
-    -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-          rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
-          integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<!--
+		Load Fonts
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!--
-        Load CSS
-    -->
-    <link rel="stylesheet" href="css/basic.css"/>
-    <link rel="stylesheet" href="css/layout.css"/>
-    <link rel="stylesheet" href="css/blogs.css"/>
-    <link rel="stylesheet" href="css/ionicons.css"/>
-    <link rel="stylesheet" href="css/magnific-popup.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="css/gradient.css"/>
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/blogs.css" />
+	<link rel="stylesheet" href="css/ionicons.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-193958248-1">
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+	<!--
+		Background Gradient
+	-->
+	<link rel="stylesheet" href="css/gradient.css" />
 
-        gtag('config', 'UA-193958248-1');
-    </script>
+	<!--
+		Template New-Skin
+	-->
+	<link rel="stylesheet" href="css/new-skin/new-skin.css" />
 
-    <!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<!--
+		Template RTL
+	-->
+	<!--<link rel="stylesheet" href="css/rtl-new.css" />-->
 
-    <!--
-        Favicons
-    -->
-    <!--	<link rel="shortcut icon" href="images/favicons/favicon.ico">-->
+	<!--
+		Template Colors
+	-->
+	<!-- <link rel="stylesheet" href="css/demos/demo-1-colors.css" /> -->
+	<link rel="stylesheet" href="css/template-colors/blue.css" />
+	<!--<link rel="stylesheet" href="css/template-colors/orange.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/pink.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/purple.css" />-->
+	<!--<link rel="stylesheet" href="css/template-colors/red.css" />-->
+
+	<!--
+		Template Dark
+	-->
+	<!--<link rel="stylesheet" href="css/template-dark/dark.css" />-->
+
+
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
 
 </head>
 
 <body>
-<div class="page">
-
-    <!-- preloader -->
-    <!-- <div class="preloader">
-        <div class="centrize full-width">
-            <div class="vertical-center">
-                <div class="spinner">
-                    <div class="double-bounce1"></div>
-                    <div class="double-bounce2"></div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- background -->
-    <div class="background gradient">
-        <ul class="bg-bubbles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-
-    <!--
-        Container
-    -->
-    <div class="container opened" data-animation-in="fadeInUp" data-animation-out="fadeOutUp">
-
-        <!--
-            Header
-        -->
-        <header class="header">
-
-            <!-- menu -->
-            <div class="top-menu">
-                <ul>
-                    <li class="active">
-                        <a href="#about-card">
-                            <span class="icon ion-person"></span>
-                            <span class="link">About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#resume-card">
-                            <span class="icon ion-android-list"></span>
-                            <span class="link">Resume</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#projects-card">
-                            <span class="icon ion-hammer"></span>
-                            <span class="link">Projects</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#blog-card">
-                            <span class="icon ion-edit"></span>
-                            <span class="link">Blog</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-        </header>
-
-        <!--
-            Card - Started
-        -->
-        <div class="card-started" id="home-card">
-
-            <!--
-                Profile
-            -->
-            <div class="profile">
-
-                <!-- profile image -->
-                <!--div class="slide" style="background-image: url(images/bg.jpg);"></div-->
-                <div class="slide" style="background-color: #304fff"></div>
-
-                <!-- profile photo -->
-                <div class="image">
-                    <img src="images/profile.png" alt=""/>
-                </div>
-
-                <!-- profile titles -->
-                <div class="title">Rasmus "Pez" Wejlgaard</div>
-                <div class="subtitle">Senior Platform Engineer</div>
-
-                <!-- profile socials -->
-                <div class="social">
-                    <a target="_blank" href="https://github.com/rwejlgaard"><span class="fab fa-github"></span></a>
-                    <a target="_blank" href="https://web.whatsapp.com/send?phone=4591355742"><span class="fab fa-whatsapp"></span></a>
-                    <a target="_blank" href="https://keybase.io/rwejlgaard"><span class="fab fa-keybase"></span></a>
-                </div>
-
-                <p style="font-size: 10px" id="hosted-on">
-                    <br/>
-                    Hosted with ❤️ on Cloudflare Pages
-                    <br/>
-                </p>
-
-                <!-- profile buttons -->
-                <div class="lnks">
-                    <a href="/cv.pdf" class="lnk">
-                        <span class="text">Download CV</span>
-                        <span class="ion ion-archive"></span>
-                    </a>
-                    <a href="mailto:pez@pez.sh" class="lnk">
-                        <span class="text">Email Me</span>
-                        <span class="far fa-paper-plane"></span>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!--
-            Card - About
-        -->
-        <div class="card-inner animated active" id="about-card">
-            <div class="card-wrap">
-
-                <!--
-                    About
-                -->
-                <div class="content about">
-
-                    <!-- title -->
-                    <div class="title">About Me</div>
-
-                    <!-- content -->
-                    <div class="row">
-                        <div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-                            <div class="text-box">
-                                <p>
-                                    I'm Rasmus also known as Pez. <br/>
-                                    This page is meant to be a showcase of my personal projects
-                                    and a light version of my CV which you can download <a href="cv.pdf">here</a>.<br/>
-                                </p>
-                            </div>
-                            <div class="info-list">
-                                <ul>
-                                    <li id="age"><strong>Age . . . . .</strong> 25</li>
-                                    <li><strong>Residence . . . . .</strong> London, UK 🇬🇧</li>
-                                    <li><strong>Work . . . . .</strong> Expedia Group</li>
-                                    <li><strong>Nationality . . . . .</strong> Danish 🇩🇰</li>
-                                    <li><strong>PGP . . . . .</strong> <a href="https://keybase.io/rwejlgaard/pgp_keys.asc">DEDE BE7B 7F4F 48F6</a></li>
-                                    <li><strong id="alt-website-label">Decentralized Website . . . . </strong> <a id="alt-website-href" href="https://ipfs.pez.sh">Link</a></li>
-                                </ul>
-                            </div>
-                            <div style="padding-top: 20px;"></div>
-                            <div id='ipfs-warning' hidden="true">
-                                <p style="border: 2px dashed #304fff; padding: 10px;border-radius: 10px;text-align: center; text-align-last: center;">
-                                    This page is using IPFS, responsiveness might be slow
-                                </p>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <script>
-            function calculateAge(birthday) { // birthday is a date
-                var ageDifMs = Date.now() - birthday;
-                var ageDate = new Date(ageDifMs); // miliseconds from epoch
-                return Math.abs(ageDate.getUTCFullYear() - 1970);
-            }
-            // set age to amount of years since 29/10/1996
-            document.getElementById('age').innerHTML = '<strong>Age . . . . .</strong> ' + calculateAge(new Date("1996-10-29"))
-
-            // if hostname starts with ipfs. or contains ipns.
-            if (window.location.hostname.startsWith('ipfs.') || window.location.hostname.includes('ipns.')) {
-                document.getElementById('hosted-on').innerHTML = '<br/>Hosted with ❤️ from <i>everywhere</i><br/>';
-                document.getElementById('alt-website-label').innerHTML = 'Normal Website . . . . ';
-                document.getElementById('alt-website-href').href = 'https://pez.sh';
-                document.getElementById('ipfs-warning').hidden = false;
-                
-            }
-            // if hostname starts with localhost.
-            else if (window.location.hostname.startsWith('localhost')) {
-                document.getElementById('hosted-on').innerHTML = '<br/>Hosted with ❤️ from <i>localhost</i><br/>';
-            }
-        </script>
-
-        <!--
-            Card - Resume
-        -->
-        <div class="card-inner" id="resume-card">
-            <div class="card-wrap">
-
-                <!--
-                    Resume
-                -->
-                <div class="content resume">
-
-                    <!-- title -->
-                    <div class="title">Resume</div>
-
-                    <!-- content -->
-                    <div class="row">
-
-                        <!-- experience -->
-                        <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                            <div class="resume-title border-line-h">
-                                <div class="icon"><i class="ion ion-briefcase"></i></div>
-                                <div class="name">Experience</div>
-                            </div>
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h active">
-                                    <div class="date">oct 2022 - present</div>
-                                    <div class="name">Senior Platform Engineer</div>
-                                    <div class="company">Expedia Group (contract)</div>
-
-                                </div>
-                                <div class="resume-item border-line-h">
-                                    <div class="date">mar 2021 - oct 2022</div>
-                                    <div class="name">Senior GCP DevOps Engineer</div>
-                                    <div class="company">GoHenry</div>
-
-                                </div>
-                                <div class="resume-item border-line-h">
-                                    <div class="date">sep 2019 - feb 2021</div>
-                                    <div class="name">Site Reliability Engineer</div>
-                                    <div class="company">10x Future Technology</div>
-
-                                </div>
-                                <div class="resume-item border-line-h">
-                                    <div class="date">apr 2019 - aug 2019</div>
-                                    <div class="name">Freelance</div>
-                                    <div class="company">Saigon, Vietnam</div>
-
-                                </div>
-                                <div class="resume-item">
-                                    <div class="date">oct 2018 - apr 2019</div>
-                                    <div class="name">Software Delivery Engineer</div>
-                                    <div class="company">Widex</div>
-                                </div>
-                                <div class="resume-item">
-                                    <div class="date">dec 2015 - sep 2018</div>
-                                    <div class="name">Cloud Platform Engineer</div>
-                                    <div class="company">KMD</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- education -->
-                        <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                            <div class="resume-title border-line-h">
-                                <div class="icon"><i class="ion ion-university"></i></div>
-                                <div class="name">Education</div>
-                            </div>
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h">
-                                    <div class="date">2013 - 2018</div>
-                                    <div class="name">Bachelor of Computer Science</div>
-                                    <div class="company">TEC</div>
-                                </div>
-                                <div class="resume-item border-line-h">
-                                    <div class="date">2003 - 2013</div>
-                                    <div class="name">Public School</div>
-                                    <div class="company">Værløse, DK</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="clear"></div>
-                    </div>
-
-                </div>
-
-                <!--
-                    Skills
-                -->
-                <div class="content skills">
-
-                    <!-- title -->
-                    <div class="title">My Skills</div>
-
-                    <!-- content -->
-                    <div class="row">
-
-                        <!-- skill item -->
-                        <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                            <div class="skills-list">
-                                <div class="skill-title border-line-h">
-                                    <div class="icon"><i class="ion ion-chatbox-working"></i></div>
-                                    <div class="name">Languages</div>
-                                </div>
-                                <ul>
-                                    <li class="border-line-h">
-                                        <div class="name">English</div>
-                                        <div class="progress">
-                                            <div class="percentage percentage-gold" style="width:100%;"></div>
-                                        </div>
-                                    </li>
-                                    <li class="border-line-h">
-                                        <div class="name">Danish</div>
-                                        <div class="progress">
-                                            <div class="percentage" style="width:95%;"></div>
-                                        </div>
-                                    </li>
-                                    <li class="border-line-h">
-                                        <div class="name">Vietnamese</div>
-                                        <div class="progress">
-                                            <div class="percentage" style="width:10%;"></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- skill item -->
-                        <div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-                            <div class="skills-list">
-                                <div class="skill-title border-line-h">
-                                    <div class="icon"><i class="ion ion-briefcase"></i></div>
-                                    <div class="name">Software</div>
-                                </div>
-                                <ul>
-                                    <li class="border-line-h">
-                                        <div class="name">Python</div>
-                                        <div class="progress">
-                                            <div class="percentage" style="width:100%;"></div>
-                                        </div>
-                                    </li>
-                                    <li class="border-line-h">
-                                        <div class="name">Golang</div>
-                                        <div class="progress">
-                                            <div class="percentage" style="width:90%;"></div>
-                                        </div>
-                                    </li>
-                                    <li class="border-line-h">
-                                        <div class="name">Java</div>
-                                        <div class="progress">
-                                            <div class="percentage" style="width:75%;"></div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="clear"></div>
-                    </div>
-
-                </div>
-
-                <div class="content resume">
-
-                    <!-- title -->
-                    <div class="title">More Skills</div>
-
-                    <!-- content -->
-                    <div class="row">
-
-                        <!-- experience -->
-                        <div class="col border-line-v">
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h">
-                                    <div class="name">GCP</div>
-                                </div>
-                            </div>
-
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h">
-                                    <div class="name">AWS</div>
-                                </div>
-                            </div>
-
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h">
-                                    <div class="name">Jenkins</div>
-                                </div>
-                            </div>
-
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h">
-                                    <div class="name">Terraform</div>
-                                </div>
-                            </div>
-
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h">
-                                    <div class="name">Kubernetes</div>
-                                </div>
-                            </div>
-
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h">
-                                    <div class="name">Ansible</div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!--
-            Card - Projects
-        -->
-
-        <div class="card-inner" id="projects-card">
-            <div class="card-wrap">
-
-                <!--
-                    Resume
-                -->
-                <div class="content resume">
-
-                    <!-- title -->
-                    <div class="title">Personal Projects</div>
-
-                    <!-- content -->
-                    <div class="row">
-
-                        <!-- experience -->
-                        <div class="col border-line-v">
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h active">
-                                    <div class="name">Raven <a href="https://github.com/nikhunter/Raven"><span class="fab fa-github"></span></a></div>
-                                    <div class="company">C, C# & Java</div>
-                                    <p>
-                                        Raven was my bachelor project, in essence it's a software suite for mass tracking of a vehicle fleet.<br/>
-                                        Using a custom designed device to plug into the vehicles data-bus it provides logging of stats like speed, RPM, location, seatbelts etc.
-                                    </p>
-                                </div>
-                                <div class="resume-item border-line-h active">
-                                    <div class="name">Phoenix <a href="https://github.com/rwejlgaard/Phoenix"><span class="fab fa-github"></span></a></div>
-                                    <div class="company">Swift, Terraform & GO</div>
-                                    <p>
-                                        Phoenix is a personal project I've started to automate my life.<br/>
-                                        It's a collection of Cloud Functions with a companion iOS application.<br/>
-                                        Functions are timed or can be activated ad-hoc, such as sending flowers to a family member before their birthday.
-                                    </p>
-                                </div>
-                                <div class="resume-item border-line-h active">
-                                    <div class="name">Pez-k8s <a href="https://github.com/rwejlgaard/pez-k8s"><span class="fab fa-github"></span></a></div>
-                                    <div class="company">Terraform & YAML</div>
-                                    <p>
-                                        This is a project to migrate all my smaller projects into kubernetes.<br/>
-                                        I'm using terraform to control all the infrastructure in GCP
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-inner" id="blog-card">
-            <div class="card-wrap">
-
-                <!--
-                    Resume
-                -->
-                <div class="content resume">
-
-                    <!-- title -->
-                    <div class="title">Blog Posts</div>
-
-                    <!-- content -->
-                    <div class="row">
-
-                        <!-- experience -->
-                        <div class="col border-line-v">
-                            <div class="resume-items">
-                                <div class="resume-item border-line-h active">
-                                    <div class="name"><a href="/blog/project-chimera">Project Chimera</a></div>
-                                    <div class="company">Swift, Terraform & GO</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!--
-            Card - Contacts
-        -->
-        <!--			<div class="card-inner contacts" id="contacts-card">-->
-        <!--				<div class="card-wrap">-->
-
-        <!--					&lt;!&ndash;-->
-        <!--						Conacts Info-->
-        <!--					&ndash;&gt;-->
-        <!--					<div class="content contacts">-->
-
-        <!--						&lt;!&ndash; title &ndash;&gt;-->
-        <!--						<div class="title">Contact me!</div>-->
-
-        <!--						&lt;!&ndash; content &ndash;&gt;-->
-        <!--						<div class="row">-->
-        <!--							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">-->
-        <!--								&lt;!&ndash;div class="map" id="map"></div&ndash;&gt;-->
-        <!--								<div class="info-list">-->
-        <!--									<ul>-->
-        <!--										<li><strong>Location . . . . .</strong> N.W. London</li>-->
-        <!--										<li><strong>Email . . . . .</strong> <a href="mailto:pez@pez.sh">pez@pez.sh</a></li>-->
-        <!--										<li><strong>Phone . .</strong> (+44) 7570-186-729</li>-->
-        <!--										<li><strong>Work . . . . .</strong> 10x Future Tech</li>-->
-        <!--									</ul>-->
-        <!--								</div>-->
-        <!--							</div>-->
-        <!--							<div class="clear"></div>-->
-        <!--						</div>-->
-
-        <!--					</div>-->
-
-        <!--					&lt;!&ndash;-->
-        <!--						Contact Form-->
-        <!--					&ndash;&gt;-->
-        <!--					<div class="content contacts">-->
-
-        <!--						&lt;!&ndash; title &ndash;&gt;-->
-        <!--						<div class="title">Contact Form</div>-->
-
-        <!--						&lt;!&ndash; content &ndash;&gt;-->
-        <!--						<div class="row">-->
-        <!--							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">-->
-        <!--								<div class="contact_form">-->
-        <!--									<form id="cform" method="post">-->
-        <!--										<div class="row">-->
-        <!--											<div class="col col-d-6 col-t-6 col-m-12">-->
-        <!--												<div class="group-val">-->
-        <!--													<input type="text" name="name" placeholder="Full Name" />-->
-        <!--												</div>-->
-        <!--											</div>-->
-        <!--											<div class="col col-d-6 col-t-6 col-m-12">-->
-        <!--												<div class="group-val">-->
-        <!--													<input type="text" name="email" placeholder="Email Address" />-->
-        <!--												</div>-->
-        <!--											</div>-->
-        <!--											<div class="col col-d-12 col-t-12 col-m-12">-->
-        <!--												<div class="group-val">-->
-        <!--													<textarea name="message" placeholder="Your Message"></textarea>-->
-        <!--												</div>-->
-        <!--											</div>-->
-        <!--										</div>-->
-        <!--										<div class="align-left">-->
-        <!--											<a href="#" class="button" onclick="$('#cform').submit(); return false;">-->
-        <!--												<span class="text">Send Message</span>-->
-        <!--												<span class="arrow"></span>-->
-        <!--											</a>-->
-        <!--										</div>-->
-        <!--									</form>-->
-        <!--									<div class="alert-success">-->
-        <!--										<p>Thanks, your message is sent successfully.</p>-->
-        <!--									</div>-->
-        <!--								</div>-->
-        <!--							</div>-->
-        <!--							<div class="clear"></div>-->
-        <!--						</div>-->
-
-        <!--					</div>-->
-
-        <!--				</div>-->
-        <!--			</div>-->
-
-    </div>
-</div>
-
-<!--
-    jQuery Scripts
--->
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.validate.js"></script>
-<script src="js/jquery.magnific-popup.js"></script>
-<script src="js/imagesloaded.pkgd.js"></script>
-<script src="js/masonry.pkgd.js"></script>
-<script src="js/masonry-filter.js"></script>
-<script src="js/jquery.slimscroll.js"></script>
-
-<!--
-    Main Scripts
--->
-<script src="js/scripts.js"></script>
-
+	<div class="page new-skin">
+
+		<!-- background -->
+		<div class="background gradient">
+			<ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+		</div>
+
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
+
+			<!--
+				Header
+			-->
+			<header class="header">
+
+				<!-- header profile
+				<div class="profile">
+					<div class="image">
+						<a href="#">
+							<img src="images/profile.png" alt="Ryan Adlard">
+						</a>
+					</div>
+					<div class="title" style="font-size: 30px;"><br/><br/>Rasmus "Pez" Wejlgaard</div>
+					<div class="subtitle subtitle-typed">
+						<div class="typing-title">
+							<p>Senior Platform Engineer</p>
+							<p>Homelabber</p>
+							<p>Has 192TB of storage</p>
+							<p>Killed a fly with a rubber band</p>
+							<p>Really good at dad jokes</p>
+							<p>Has servers all over the globe</p>
+							<p>Xin chào</p>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- menu btn -->
+				<!--<a href="#" class="menu-btn"><span></span></a>-->
+
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li class="active">
+							<a href="#about-card">
+								<span class="icon ion-person"></span>
+								<span class="link">About</span>
+							</a>
+						</li>
+						<li>
+							<a href="#resume-card">
+								<span class="icon ion-android-list"></span>
+								<span class="link">Resume</span>
+							</a>
+						</li>
+						<li>
+							<a href="#projects-card">
+								<span class="icon ion-hammer"></span>
+								<span class="link">Projects</span>
+							</a>
+						</li>
+						<li>
+							<a href="#blog-card">
+								<span class="icon ion-chatbox-working"></span>
+								<span class="link">Blog</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</header>
+
+			<!--
+				Card - Started
+			-->
+			<div class="card-started" id="home-card">
+
+				<!--
+					Profile
+				-->
+				<div class="profile no-photo">
+
+					<!-- profile image -->
+					<div class="slide" style="background-color: #304fff"></div>
+
+					<!-- profile photo -->
+					<!-- <div class="image">
+						<img style="width: 172px; height: 173px;" src="images/profile.png" alt="" />
+					</div> -->
+
+					<!-- profile titles -->
+					<div class="title" style="font-size: 30px;"><br/><br/>Rasmus "Pez" Wejlgaard</div>
+					<!--<div class="subtitle">Web Designer</div>-->
+					<div class="subtitle subtitle-typed">
+						<div class="typing-title">
+							<p>Senior Platform Engineer</p>
+							<p>Homelabber</p>
+							<p>Has 192TB of storage</p>
+							<p>Killed a fly with a rubber band</p>
+							<p>Really good at dad jokes</p>
+							<p>Has servers all over the globe</p>
+							<p>Xin chào</p>
+						</div>
+					</div>
+
+					<!-- profile socials -->
+					<div class="social">
+						<!-- <a target="_blank" href="https://dribbble.com/"><span class="fa fa-dribbble"></span></a> -->
+						<!-- <a target="_blank" href="https://twitter.com/"><span class="fa fa-twitter"></span></a> -->
+						<!-- <a target="_blank" href="https://github.com/rwejlgaard"><span class="fa fa-github"></span></a> -->
+						<a target="_blank" href="https://github.com/rwejlgaard"><span class="fa fa-github"></span></a>
+                    <a target="_blank" href="https://web.whatsapp.com/send?phone=4591355742"><span class="fa fa-whatsapp"></span></a>
+                    <a target="_blank" href="https://keybase.io/rwejlgaard"><span class="fa fa-keybase"></span></a>
+					</div>
+
+					<p style="font-size: 10px" id="hosted-on">
+						<br/>
+						Hosted with ❤️ on Cloudflare Pages
+						<br/>
+					</p>
+
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a href="/cv.pdf" class="lnk">
+							<span class="text">Download CV</span>
+							<span class="ion ion-archive"></span>
+						</a>
+						<a href="mailto:pez@pez.sh" class="lnk discover">
+							<span class="text">Email Me</span>
+							<span class="fa fa-paper-plane"></span>
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--
+				Card - About
+			-->
+			<div class="card-inner animated active" id="about-card">
+				<div class="card-wrap">
+
+					<!--
+						About
+					-->
+					<div class="content about">
+
+						<!-- title -->
+						<div class="title">About Me</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="text-box">
+									<p>
+										I'm Rasmus also known as Pez. <br/>
+										This page is meant to be a showcase of my personal projects
+										and a light version of my CV which you can download <a href="cv.pdf" style="color: #304fff">here</a>.<br/>
+									</p>
+								</div>
+							</div>
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="info-list">
+									<ul>
+										<li id="age"><strong>Age</strong> 25</li>
+										<li><strong>Residence</strong> London, UK 🇬🇧</li>
+										<li><strong>Work</strong> Expedia Group</li>
+										<li><strong>Nationality</strong> Danish 🇩🇰</li>
+										<li><strong>PGP</strong> <a href="https://keybase.io/rwejlgaard/pgp_keys.asc" style="color: #304fff;">DEDE BE7B 7F4F 48F6</a></li>
+										<li><strong id="alt-website-label">Decentralized Website</strong> <a id="alt-website-href" href="https://ipfs.pez.sh" style="color: #304fff">Link</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<script>
+						function calculateAge(birthday) { // birthday is a date
+							var ageDifMs = Date.now() - birthday;
+							var ageDate = new Date(ageDifMs); // miliseconds from epoch
+							return Math.abs(ageDate.getUTCFullYear() - 1970);
+						}
+						// set age to amount of years since 29/10/1996
+						document.getElementById('age').innerHTML = '<strong>Age</strong> ' + calculateAge(new Date("1996-10-29"))
+			
+						// if hostname starts with ipfs. or contains ipns.
+						// if (window.location.hostname.startsWith('ipfs.') || window.location.hostname.includes('ipns.')) {
+							// document.getElementById('hosted-on').innerHTML = '<br/>Hosted with ❤️ from <i>everywhere</i><br/>';
+							// document.getElementById('alt-website-label').innerHTML = 'Normal Website . . . . ';
+							// document.getElementById('alt-website-href').href = 'https://pez.sh';
+							// document.getElementById('ipfs-warning').hidden = false;
+							
+						// }
+						// if hostname starts with localhost.
+						// else if (window.location.hostname.startsWith('localhost')) {
+						// 	document.getElementById('hosted-on').innerHTML = '<br/>Hosted with ❤️ from <i>localhost</i><br/>';
+						// }
+					</script>
+				</div>
+			</div>
+
+			<!--
+				Card - Resume
+			-->
+			<div class="card-inner" id="resume-card">
+				<div class="card-wrap">
+
+					<!--
+						Resume
+					-->
+					<div class="content resume">
+
+						<!-- title -->
+						<div class="title">Resume</div>
+
+						<!-- content -->
+						<div class="row">
+
+							<!-- experience -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="fa fa-briefcase"></i></div>
+									<div class="name">Experience</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h active">
+										<div class="date">oct 2022 - present</div>
+										<div class="name">Senior Platform Engineer</div>
+										<div class="company">Expedia Group (contract) - London</div>
+										
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">mar 2021 - oct 2022</div>
+										<div class="name">Senior GCP DevOps Engineer</div>
+										<div class="company">GoHenry - London</div>
+	
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">sep 2019 - feb 2021</div>
+										<div class="name">Site Reliability Engineer</div>
+										<div class="company">10x Future Technology - London</div>
+	
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">apr 2019 - aug 2019</div>
+										<div class="name">Freelance</div>
+										<div class="company">Saigon, Vietnam</div>
+	
+									</div>
+									<div class="resume-item">
+										<div class="date">oct 2018 - apr 2019</div>
+										<div class="name">Software Delivery Engineer</div>
+										<div class="company">Widex - Copenhagen</div>
+									</div>
+									<div class="resume-item">
+										<div class="date">dec 2015 - sep 2018</div>
+										<div class="name">Cloud Platform Engineer</div>
+										<div class="company">KMD - Copenhagen</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- education -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="fa fa-university"></i></div>
+									<div class="name">Education</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h">
+										<div class="date">2013 - 2018</div>
+										<div class="name">Bachelor of Computer Science</div>
+										<div class="company">TEC</div>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">2003 - 2013</div>
+										<div class="name">Public School</div>
+										<div class="company">Værløse, DK</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+					<!--
+						Skills
+					-->
+					<div class="content skills">
+
+						<!-- title -->
+						<div class="title">My Skills</div>
+
+						<!-- content -->
+						<div class="row">
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="ion ion-lightbulb"></i></div>
+										<div class="name">Skills</div>
+									</div>
+									<ul>
+										<li class="border-line-h">
+											<div class="name">Google Cloud Platform (GCP)</div>
+											<div class="progress">
+												<div class="percentage" style="width:100%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Amazon Web Services (AWS)</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Linux</div>
+											<div class="progress">
+												<div class="percentage" style="width:85%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">Kubernetes</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list dotted">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fa fa-flag"></i></div>
+										<div class="name">Languages</div>
+									</div>
+									<ul>
+										<li class="border-line-h">
+											<div class="name">English</div>
+											<div class="progress">
+												<div class="percentage" style="width:100%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Danish</div>
+											<div class="progress">
+												<div class="percentage" style="width:100%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Vietnamese</div>
+											<div class="progress">
+												<div class="percentage" style="width:20%;"></div>
+											</div>
+										</li>
+										<li>
+											<div class="name">Swedish & Norwegian</div>
+											<div class="progress ">
+												<div class="percentage" style="width:70%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list circles">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fa fa-code"></i></div>
+										<div class="name">Coding</div>
+									</div>
+									<ul>
+										<li>
+											<div class="name">Python</div>
+											<div class="progress p100">
+												<span>100%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">Golang</div>
+											<div class="progress p75">
+												<span>75%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">Terraform</div>
+											<div class="progress p90">
+												<span>90%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">Bash</div>
+											<div class="progress p90">
+												<span>90%</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fa fa-list"></i></div>
+										<div class="name">Knowledge</div>
+									</div>
+									<ul>
+										<li>
+											<div class="name">Kubernetes</div>
+										</li>
+										<li>
+											<div class="name">System Administration</div>
+										</li>
+										<li>
+											<div class="name">Immutable Infrastructure</div>
+										</li>
+										<li>
+											<div class="name">ArgoCD</div>
+										</li>
+										<li>
+											<div class="name">Cloud Management</div>
+										</li>
+										<li>
+											<div class="name">Incident Response</div>
+										</li>
+										<li>
+											<div class="name">Can Automate Anything</div>
+										</li>
+										<li>
+											<div class="name">Infrastructure Debugging</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="card-inner" id="projects-card">
+				<div class="card-wrap">
+	
+					<!--
+						Resume
+					-->
+					<div class="content projects">
+	
+						<!-- title -->
+						<div class="title">Personal Projects</div>
+	
+						<!-- content -->
+						<div class="row">
+	
+							<!-- experience -->
+							<div class="col border-line-v">
+								<div class="resume-items">
+									<div class="resume-item border-line-h active">
+										<div class="name">Raven <a href="https://github.com/nikhunter/Raven"><span class="fa fa-github"></span></a></div>
+										<div class="company">C, C# & Java</div>
+										<p>
+											Raven was my bachelor project, in essence it's a software suite for mass tracking of a vehicle fleet.<br/>
+											Using a custom designed device to plug into the vehicles data-bus it provides logging of stats like speed, RPM, location, seatbelts etc.
+										</p>
+									</div>
+									<div class="resume-item border-line-h active">
+										<div class="name">Phoenix <a href="https://github.com/rwejlgaard/Phoenix"><span class="fa fa-github"></span></a></div>
+										<div class="company">Swift, Terraform & GO</div>
+										<p>
+											Phoenix is a personal project I've started to automate my life.<br/>
+											It's a collection of Cloud Functions with a companion iOS application.<br/>
+											Functions are timed or can be activated ad-hoc, such as sending flowers to a family member before their birthday.
+										</p>
+									</div>
+									<div class="resume-item border-line-h active">
+										<div class="name">Pez-k8s <a href="https://github.com/rwejlgaard/pez-k8s"><span class="fa fa-github"></span></a></div>
+										<div class="company">Terraform & YAML</div>
+										<p>
+											This is a project to migrate all my smaller projects into kubernetes.<br/>
+											I'm using terraform to control all the infrastructure in GCP
+	
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner" id="blog-card">
+				<div class="card-wrap">
+
+					<!-- Blog -->
+					<div class="content blog">
+
+						<!-- title -->
+						<div class="title">
+							<span >Blog</span>
+						</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+							<!-- blog item -->
+							<div class="col col-d-6 col-t-6 col-m-12">
+								<div class="top-menu box-item">
+									<div class="image">
+										<a href="#project-chimera-blog">
+											<img src="blog/project-chimera/imgs/DraggedImage.png" alt="By spite about do of allow" />
+											<span class="info">
+												<span class="ion ion-document-text"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#project-chimera-blog">
+											<span class="date">April 28, 2021</span>
+										</a>
+										<a href="#project-chimera-blog" class="name">Project Chimera</a>
+										<div class="text">
+											<p>Unlocking the full potential of an iPad Pro by strapping a Raspberry Pi to the back of it</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+						<!-- <div class="pager">
+							<nav class="navigation pagination">
+								<div class="nav-links">
+									<span class="page-numbers current">1</span>
+									<a class="page-numbers" href="#">2</a>
+									<a class="next page-numbers" href="#">Next</a>
+								</div>
+							</nav>
+						</div> -->
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Blog Posts
+			-->
+
+			<!--
+				Card - Blog
+			-->
+			<div class="card-inner blog-single" id="project-chimera-blog">
+				<div class="card-wrap">
+
+					<!--
+						Blog Single
+					-->
+					<div class="content blog-single">
+
+						<!-- title -->
+						<div class="title">Blog Post</div>
+
+						<!-- content -->
+						<div class="row border-line-v">
+							<div class="col col-m-12 col-t-12 col-d-12">
+								<div class="post-box">
+
+									<!-- blog detail -->
+									<h1 class="h-title">Project Chimera</h1>
+									<div class="blog-detail">
+										<span class="date">April 28, 2021</span>
+										<span class="byline"> by Rasmus</span>
+									</div>
+
+									<!-- blog image -->
+									<div class="blog-image">
+										<img src="blog/project-chimera/imgs/DraggedImage.png" alt="CAD drawing of a slim raspberry pi case" />
+									</div>
+
+									<!-- blog content -->
+									<div class="blog-content">
+										<h2>What is Chimera</h2>
+
+										<p>This is the scientific definition:</p>
+
+										<blockquote>
+										<p>A [Chimera], is a single organism composed of cells with more than one distinct genotype.</p>
+										</blockquote>
+
+										<p>How that should be understood in terms of this project are the following:</p>
+
+										<p>“One computing instrument composed of two different devices”.</p>
+
+										<p>I do <em>all</em> my computing using an iPad Pro with a keyboard case and a trackpad. However, I often find that using only the iPad is very limited in design, and just having access to a standard linux shell would be very beneficial.</p>
+
+										<p>After having used the iPad for my daily work, I’ve found my groove and come to terms with the quirks and pitfalls of using iPadOS.</p>
+
+										<p>For my daily work as a Platform Engineer at a financial firm, using command-line programs such as terraform, kubectl, helm etc. is a must. If I was unable to use these, I would quickly be made redundant.</p>
+
+										<p>I overcame this challenge by setting up a VM in my personal Google Cloud project. This was met with mixed opinions by the security team when I explained to them how I was working.</p>
+
+										<p>The key points were about the exposed nature of the machine, the network is managed by me and therefore outside of the security teams jurisdiction. In addition, in order to remote into the machine to get an SSH connection the port would have to be open which has the threat of a hacker targeting the machine.</p>
+
+										<p>Another drawback to the approach is if I want to do some work while on a plane or otherwise offline. SSH’ing into the machine requires an active internet connection.</p>
+
+										<p>The solution I found is using a Rasberry Pi connected directly via a USB-C cable which provides both power for the Pi and data for SSH’ing into it.</p>
+
+										<h2>Design</h2>
+
+										<p>The design is important, the goal is for the Pi to be attached to the outside of the keyboard case. It <em>has</em> to my slim enough to not stand out too much if I’m on a plane or in a coffee shop while working.</p>
+
+										<p>I’ve designed a custom case which is 3D printed and I’ve removed the ethernet jack and USB ports.</p>
+
+										<p>While developing this project I’ve come across the compute module 4 which is basically a raspberry pi 4 model b with all the ports removed. For a second revision of this project I’ll use that along with a custom carrier board with only the USB-C port attached.</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--
+		jQuery Scripts
+	-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="https://use.fontawesome.com/8da76d029b.js"></script>
+
+	<!--
+		Main Scripts
+	-->
+	<script src="js/scripts.js"></script>
 </body>
 </html>
