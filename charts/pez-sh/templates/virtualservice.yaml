@@ -1,0 +1,23 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: {{ .Chart.Name }}
+spec:
+  {{- with .Values.virtualService.hosts }}
+  hosts:
+    {{- toYaml . | nindent 2 }}
+  {{- end }}
+  {{- with .Values.virtualService.gateways }}
+  gateways:
+    {{- toYaml . | nindent 2 }}
+  {{- end }}
+  http:
+  - name: {{ .Chart.Name }}
+    route:
+    - destination:
+        host: {{ .Values.rollouts.stableService }}
+      weight: 100
+    - destination:
+        host: {{ .Values.rollouts.canaryService }}
+      weight: 0
+    
