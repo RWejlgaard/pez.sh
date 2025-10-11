@@ -1,0 +1,24 @@
+name: Deploy
+
+on:
+  push: 
+    branches: 
+      - master
+
+env:
+  HOSTNAME: helsinki-a.pez.sh
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup ssh key
+        run: |
+          echo "${{ secrets.SSH_KEY }}" | base64 -d > /tmp/id_rsa
+          chmod 600 /tmp/id_rsa
+      - name: Trigger update on server
+        run: |
+          echo "Pulling master on server..."
+          ssh -oStrictHostKeyChecking=no -i /tmp/id_rsa root@${HOSTNAME} -- "cd /srv/pez.sh && git pull origin master"
+          echo "Done"
