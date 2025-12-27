@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pez.sh - Dungeon Shooter</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <pre><h1>pez.sh</h1></pre>
+            <nav>
+                <a href="/">About</a>
+                <a href="/stats">Stats</a>
+                <a href="/projects">Projects</a>
+                <a href="/contact">Contact</a>
+                <a href="/play" class="active">Fun stuff</a>
+            </nav>
+        </div>
+
+        <div class="content">
+            <pre>DUNGEON SHOOTER
+---------------
+WASD to move | Mouse to aim | Click to shoot | Find the stairs (>) to descend | Defeat enemies (E)
+Press SPACE to start
+</pre>
+            <div id="game-container">
+                <canvas id="gameCanvas" width="600" height="600"></canvas>
+                <div id="stats">
+                    <div id="level">Dungeon Level: 1</div>
+                    <div id="health">Health: 100/100</div>
+                    <div id="ammo">Ammo: 12/12</div>
+                    <div id="kills">Kills: 0</div>
+                </div>
+                <div id="message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

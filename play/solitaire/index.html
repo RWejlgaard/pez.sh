@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pez.sh - Solitaire</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <pre><h1>pez.sh</h1></pre>
+            <nav>
+                <a href="/">About</a>
+                <a href="/stats">Stats</a>
+                <a href="/projects">Projects</a>
+                <a href="/contact">Contact</a>
+                <a href="/play" class="active">Fun stuff</a>
+            </nav>
+        </div>
+
+        <div class="content">
+            <pre>SOLITAIRE
+------------------
+Click to select card | Click valid destination to move | Double-click to auto-move to foundation
+Press 'N' for new game | Draw 3 cards at a time
+</pre>
+            <div id="game-container">
+                <div id="stats">
+                    <div id="moves">Moves: 0</div>
+                    <div id="score">Score: 0</div>
+                    <div id="timer">Time: 0</div>
+                </div>
+                <canvas id="gameCanvas" width="800" height="600"></canvas>
+                <div id="message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

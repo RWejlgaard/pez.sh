@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pez.sh - Minesweeper</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <pre><h1>pez.sh</h1></pre>
+            <nav>
+                <a href="/">About</a>
+                <a href="/stats">Stats</a>
+                <a href="/projects">Projects</a>
+                <a href="/contact">Contact</a>
+                <a href="/play" class="active">Fun stuff</a>
+            </nav>
+        </div>
+
+        <div class="content">
+            <pre>MINESWEEPER
+-----------
+Left click to reveal | Right click to flag | Click on numbers to clear adjacent if flags match
+Click anywhere to start
+</pre>
+            <div id="game-container">
+                <div id="stats">
+                    <div id="mines">Mines: 40</div>
+                    <div id="flags">Flags: 0</div>
+                    <div id="timer">Time: 0</div>
+                </div>
+                <canvas id="gameCanvas" width="640" height="640"></canvas>
+                <div id="message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Terminal color palette */
+:root {
+    --color-black: #000000;
+    --color-red: #ff0000;
+    --color-green: #00ff00;
+    --color-yellow: #ffff00;
+    --color-blue: #5353ff;
+    --color-magenta: #ff00ff;
+    --color-cyan: #00ffff;
+    --color-white: #ffffff;
+    --color-bright-black: #808080;
+    --color-bright-red: #ff8080;
+    --color-bright-green: #80ff80;
+    --color-bright-yellow: #ffff80;
+    --color-bright-blue: #8080ff;
+    --color-bright-magenta: #ff80ff;
+    --color-bright-cyan: #80ffff;
+    --color-bright-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: monospace;
+}
+
+pre {
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 1px solid var(--color-white);
+}
+
+.header h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header nav a:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.header nav a.active {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.content {
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-white);
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: var(--color-white);
+}
+
+/* Color utility classes */
+.color-black { color: var(--color-black); }
+.color-red { color: var(--color-red); }
+.color-green { color: var(--color-green); }
+.color-yellow { color: var(--color-yellow); }
+.color-blue { color: var(--color-blue); }
+.color-magenta { color: var(--color-magenta); }
+.color-cyan { color: var(--color-cyan); }
+.color-white { color: var(--color-white); }
+.color-bright-black { color: var(--color-bright-black); }
+.color-bright-red { color: var(--color-bright-red); }
+.color-bright-green { color: var(--color-bright-green); }
+.color-bright-yellow { color: var(--color-bright-yellow); }
+.color-bright-blue { color: var(--color-bright-blue); }
+.color-bright-magenta { color: var(--color-bright-magenta); }
+.color-bright-cyan { color: var(--color-bright-cyan); }
+.color-bright-white { color: var(--color-bright-white); }
+
+.bg-black { background-color: var(--color-black); }
+.bg-red { background-color: var(--color-red); }
+.bg-green { background-color: var(--color-green); }
+.bg-yellow { background-color: var(--color-yellow); }
+.bg-blue { background-color: var(--color-blue); }
+.bg-magenta { background-color: var(--color-magenta); }
+.bg-cyan { background-color: var(--color-cyan); }
+.bg-white { background-color: var(--color-white); }
+.bg-bright-black { background-color: var(--color-bright-black); }
+.bg-bright-red { background-color: var(--color-bright-red); }
+.bg-bright-green { background-color: var(--color-bright-green); }
+.bg-bright-yellow { background-color: var(--color-bright-yellow); }
+.bg-bright-blue { background-color: var(--color-bright-blue); }
+.bg-bright-magenta { background-color: var(--color-bright-magenta); }
+.bg-bright-cyan { background-color: var(--color-bright-cyan); }
+.bg-bright-white { background-color: var(--color-bright-white); }

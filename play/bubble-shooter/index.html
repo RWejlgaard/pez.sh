@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pez.sh - Bubble Shooter</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <pre><h1>pez.sh</h1></pre>
+            <nav>
+                <a href="/">About</a>
+                <a href="/stats">Stats</a>
+                <a href="/projects">Projects</a>
+                <a href="/contact">Contact</a>
+                <a href="/play" class="active">Fun stuff</a>
+            </nav>
+        </div>
+
+        <div class="content">
+            <pre>BUBBLE SHOOTER
+--------------
+Move mouse to aim | Click to shoot | Match 3+ bubbles to pop them
+Clear all bubbles to win | Game over if bubbles reach the bottom
+</pre>
+            <div id="game-container">
+                <div id="stats">
+                    <div id="score">Score: 0</div>
+                    <div id="bubbles">Bubbles: 0</div>
+                    <div id="shots">Shots: 0</div>
+                </div>
+                <canvas id="gameCanvas" width="560" height="700"></canvas>
+                <div id="message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

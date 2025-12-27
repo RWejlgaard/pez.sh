@@ -1,0 +1,49 @@
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+#gameCanvas {
+    border: 2px solid var(--color-white);
+    background-color: var(--color-black);
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+#stats {
+    display: flex;
+    gap: 30px;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+#level {
+    color: var(--color-cyan);
+}
+
+#health {
+    color: var(--color-red);
+}
+
+#ammo {
+    color: var(--color-yellow);
+}
+
+#gameCanvas {
+    cursor: crosshair;
+}
+
+#kills {
+    color: var(--color-green);
+}
+
+#message {
+    font-family: monospace;
+    color: var(--color-bright-yellow);
+    min-height: 1.5em;
+    text-align: center;
+    font-size: 1.1em;
+}
