@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pez.sh - Space Invaders</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <pre><h1>pez.sh</h1></pre>
+            <nav>
+                <a href="/">About</a>
+                <a href="/stats">Stats</a>
+                <a href="/projects">Projects</a>
+                <a href="/contact">Contact</a>
+                <a href="/play" class="active">Fun stuff</a>
+            </nav>
+        </div>
+
+        <div class="content">
+            <pre>SPACE INVADERS
+--------------
+Arrow Keys: Move | Space: Shoot | R: Restart
+Destroy all invaders before they reach you
+Hide behind shields for protection
+Don't let them land!
+</pre>
+            <div id="game-container">
+                <div id="stats">
+                    <div id="score">Score: 0</div>
+                    <div id="level">Level: 1</div>
+                    <div id="lives">Lives: 3</div>
+                </div>
+                <canvas id="gameCanvas" width="800" height="600"></canvas>
+                <div id="message"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
