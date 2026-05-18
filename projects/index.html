@@ -62,6 +62,31 @@ Status: <span class="color-green">Active</span>
             </div>
 
             <div class="project">
+                <pre><strong>history-sync.fish</strong>
+
+Description: Sync fish shell history between multiple machines over SFTP. Each machine periodically pulls the shared
+history file, merges with its local fish_history, and pushes the result back. Dedupes by (cmd, when) and uses an
+atomic SFTP lock with exponential backoff to handle concurrent updates from other hosts.
+
+Tech Stack: Fish shell, SFTP
+Link: <a target="_blank" href="https://github.com/rwejlgaard/history-sync.fish">https://github.com/rwejlgaard/history-sync.fish</a>
+Status: <span class="color-green">Active</span>
+</pre>
+            </div>
+
+            <div class="project">
+                <pre><strong>octopus_exporter</strong>
+
+Description: A Prometheus exporter for live electricity consumption data from Octopus Energy, using the Kraken
+GraphQL API. Feeds real-time usage into Grafana so I can see exactly what every appliance is costing me.
+
+Tech Stack: Go, Prometheus, GraphQL, Docker
+Link: <a target="_blank" href="https://github.com/rwejlgaard/octopus_exporter">https://github.com/rwejlgaard/octopus_exporter</a>
+Status: <span class="color-green">Active</span>
+</pre>
+            </div>
+
+            <div class="project">
                 <pre><strong>Batt</strong>
 
 Description: A battery indicator for CLI written in x86 assembly
