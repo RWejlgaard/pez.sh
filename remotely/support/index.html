@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pez.sh - Remotely support</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <pre><h1>pez.sh</h1></pre>
+            <nav>
+                <a href="/">About</a>
+                <a href="/stats">Stats</a>
+                <a href="/projects">Projects</a>
+                <a href="/contact">Contact</a>
+                <a href="/play">Fun stuff</a>
+            </nav>
+        </div>
+
+        <div class="content">
+            <pre>
+<strong>Remotely support</strong>
+
+Email <a href="mailto:pez@pez.sh?subject=Remotely">pez@pez.sh</a> with what you tried, what happened, and your device and iOS version. I read everything.
+
+<strong>Common questions</strong>
+
+<strong>How many connections can I save for free?</strong>
+Three. "Remotely Unlimited" is a one-time purchase that removes the limit on every device signed in to your Apple Account. Connections you already have always keep working.
+
+<strong>I bought Remotely Unlimited but it isn't unlocked.</strong>
+Open Settings in Remotely and tap Restore Purchases, signed in with the Apple Account you bought it with.
+
+<strong>My connections or keys don't appear on my other device.</strong>
+Remotely syncs with iCloud. Check that iCloud and iCloud Keychain are on in the Settings app on both devices, and give it a minute with Remotely open.
+
+<strong>Which SSH keys work?</strong>
+Ed25519 and RSA private keys in OpenSSH format (e.g. ~/.ssh/id_ed25519), including passphrase-protected ones, and unencrypted PEM RSA keys. Add keys in Settings > SSH Keys, or generate one there and copy its public key into ~/.ssh/authorized_keys on your server.
+
+<strong>"Host key changed" when connecting over SSH.</strong>
+The server presented a different key than the first time. That's expected if the server was reinstalled; otherwise check with whoever runs it before trusting the new key.
+
+<strong>Connecting to a Mac over VNC.</strong>
+In macOS System Settings > General > Sharing > Screen Sharing, turn on "VNC viewers may control screen with password" and set a password.
+
+<strong>Connecting over RDP.</strong>
+Windows needs Remote Desktop turned on (Pro, Enterprise or Server editions). Linux works with xrdp.
+
+<strong>Remotely asks for Local Network access.</strong>
+iOS asks before an app connects to devices on your network. Allow it to reach servers at home or in the office.
+</pre>
+        </div>
+    </div>
+</body>
+</html>
